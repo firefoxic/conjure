@@ -1,0 +1,41 @@
+name: Test project
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - '*'
+
+env:
+  FORCE_COLOR: true
+
+jobs:
+  check:
+    name: Test
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: 'package.json'
+
+      - name: Restore cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.local/share/pnpm/store/v3
+          key: cache-pnpm-${{ hashFiles('./pnpm-lock.yaml') }}
+          restore-keys: cache-pnpm-
+
+      - name: Install dependencies
+        run: corepack enable pnpm && pnpm i
+
+      - name: Run checks
+        run: pnpm test

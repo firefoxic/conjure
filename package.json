@@ -1,0 +1,59 @@
+{
+	"name": "@firefoxic/conjure",
+	"description": "🪄  Conjure images, icons and favicons for your frontend project.",
+	"version": "0.0.1",
+	"type": "module",
+	"engines": {
+		"node": "^18.12 || >=20.9",
+		"pnpm": "^8.15"
+	},
+	"dependencies": {
+		"globby": "^14.0.1",
+		"ico-endec": "^0.1.6",
+		"meow": "^13.2.0",
+		"sharp": "^0.33.3",
+		"svgo": "^3.2.0"
+	},
+	"homepage": "https://github.com/firefoxic/conjure#readme",
+	"bugs": {
+		"url": "https://github.com/firefoxic/conjure/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/firefoxic/conjure"
+	},
+	"keywords": [
+		"conjure",
+		"image",
+		"icon",
+		"favicon",
+		"optimize",
+		"vector",
+		"svg",
+		"convert",
+		"raster",
+		"webp",
+		"avif",
+		"ico",
+		"prepare",
+		"frontend"
+	],
+	"license": "MIT",
+	"author": {
+		"name": "Sergey Artemov",
+		"email": "firefoxic.dev@gmail.com"
+	},
+	"scripts": {
+		"prepare": "husky",
+		"preversion": "pnpm test",
+		"postversion": "pnpm publish",
+		"postpublish": "git push origin --all && git push origin --tags",
+		"lint": "eslint .",
+		"test": "node --test",
+		"pretest": "pnpm lint"
+	},
+	"devDependencies": {
+		"eslint": "^8.57.0",
+		"husky": "^9.0.11"
+	}
+}
