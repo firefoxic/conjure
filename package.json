@@ -3,6 +3,15 @@
 	"description": "🪄  Conjure images, icons and favicons for your frontend project.",
 	"version": "0.0.1",
 	"type": "module",
+	"bin": {
+		"conjure": "bin/cli.js",
+		"whoosh": "bin/cli.js",
+		"woosh": "bin/cli.js"
+	},
+	"exports": "./lib/index.js",
+	"files": [
+		"./lib/"
+	],
 	"engines": {
 		"node": "^18.12 || >=20.9",
 		"pnpm": "^8.15"
@@ -46,7 +55,7 @@
 	"scripts": {
 		"prepare": "husky",
 		"preversion": "pnpm test",
-		"postversion": "pnpm publish",
+		"postversion": "pnpm publish --access=public",
 		"postpublish": "git push origin --all && git push origin --tags",
 		"lint": "eslint .",
 		"test": "node --test",
