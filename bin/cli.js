@@ -16,7 +16,7 @@ Commands
 		Optimize SVG icon files.
 
 	favicons
-		Optimize SVG favicon and generate from it raster favicons, including ICO format and all necessary PNG and Webp.
+		Optimize SVG favicon and generate from it raster favicons, including ICO format and all necessary PNG and Webp, and also generate a webmanifest.
 
 	all
 		Run all the above commands.

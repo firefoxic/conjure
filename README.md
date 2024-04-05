@@ -30,7 +30,7 @@ conjure <command> [options]
 
 - `images` — Optimize SVGs and convert raster images to modern formats (Webp and Avif by default).
 - `icons` — Optimize SVG icon files.
-- `favicons` — Optimize SVG favicon and generate from it raster favicons, including ICO format and all necessary PNG and Webp.
+- `favicons` — Optimize SVG favicon and generate from it raster favicons, including ICO format and all necessary PNG and Webp, and also generate a webmanifest.
 - `all` — Run all the above commands.
 
 	> **Notice**: Individual commands handle the contents of the specified directory. But the general `all` command expects the path to the directory containing the `images`, `icons` and `favicons` directories (see [examples](#examples) below).
@@ -71,6 +71,7 @@ conjure <command> [options]
 	- `<origin_name>-180.png` in size `180×180` for old iPhones
 	- `<origin_name>-192.png` and `<origin_name>-192.webp` in size `192×192`
 	- `<origin_name>-512.png` and `<origin_name>-512.webp` in size `512×512`
+	- `<origin_name>.webmanifest` with the `name` and `description` fields from your `package.json` and the `icons` field for the `192` and `512` files
 
 	```shell
 	conjure favicons -i assets/favicons
