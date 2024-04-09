@@ -75,24 +75,24 @@ Examples
 			shortFlag: `o`,
 		},
 		originDensity: {
-			type: `number`,
-			shortFlag: `d`,
-			default: 2,
+			"type": `number`,
+			"shortFlag": `d`,
+			"default": 2,
 		},
 		targetFormats: {
-			type: `string`,
-			shortFlag: `f`,
-			default: `webp,avif`,
+			"type": `string`,
+			"shortFlag": `f`,
+			"default": `webp,avif`,
 		},
 		addOriginFormat: {
-			type: `boolean`,
-			shortFlag: `a`,
-			default: false,
+			"type": `boolean`,
+			"shortFlag": `a`,
+			"default": false,
 		},
 		removeOrigin: {
-			type: `boolean`,
-			shortFlag: `r`,
-			default: false,
+			"type": `boolean`,
+			"shortFlag": `r`,
+			"default": false,
 		},
 	},
 })
@@ -112,19 +112,19 @@ if (!(`outputDirectory` in cli.flags)) {
 options.targetFormats = options.targetFormats.split(`,`).map((format) => format.trim())
 
 switch (command) {
-case `images`:
-	await conjureImages(options)
-	break
-case `icons`:
-	await conjureIcons(options)
-	break
-case `favicons`:
-	await conjureFavicons(options)
-	break
-case `all`:
-	await conjureAll(options)
-	break
-default:
-	cli.showHelp()
-	break
+	case `images`:
+		await conjureImages(options)
+		break
+	case `icons`:
+		await conjureIcons(options)
+		break
+	case `favicons`:
+		await conjureFavicons(options)
+		break
+	case `all`:
+		await conjureAll(options)
+		break
+	default:
+		cli.showHelp()
+		break
 }
