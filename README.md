@@ -30,7 +30,7 @@ conjure <command> [options]
 
 - `images` — Optimize SVGs and convert raster images to modern formats (Webp and Avif by default).
 - `icons` — Optimize SVG icon files.
-- `favicons` — Optimize SVG favicon and generate from it raster favicons, including ICO format and all necessary PNG and Webp, and also generate a webmanifest.
+- `favicons` — Optimize SVG favicon and generate from it raster favicons, including ICO format and all necessary PNG and Webp, and also generate a webmanifest (read [this article about favicons](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs) by Andrey Sitnik).
 - `all` — Run all the above commands.
 
 	> **Notice**: Individual commands handle the contents of the specified directory. But the general `all` command expects the path to the directory containing the `images`, `icons` and `favicons` directories (see [examples](#examples) below).
