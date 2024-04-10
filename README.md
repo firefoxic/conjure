@@ -77,6 +77,8 @@ conjure <command> [options]
 	conjure favicons -i assets/favicons
 	```
 
+	Rename the resulting `ico` and `webmanifest` files and move them to the project directory, from where they will be moved to the root of the server. The default paths in `webmanifest` are formed with the expectation that the `webmanifest` file will be moved to the root of the project source. In any case, double-check these paths to make sure they match the file structure of your project.
+
 - Run all three special commands with default settings, but deleting the original raster images, i.e.:
 	- run `conjure images` in the `rc/shared/images` folder with deleting the original raster images,
 	- run `conjure icons` in the ``src/shared/icons` folder,
