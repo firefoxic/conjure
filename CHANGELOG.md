@@ -25,7 +25,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 - Basic functionality.
 
-[Unreleased]: https://github.com/firefoxic/gulp-stacksvg/compare/v0.1.2...HEAD
-[0.1.2]: https://github.com/firefoxic/gulp-stacksvg/compare/v0.1.1...v0.1.2
-[0.1.1]: https://github.com/firefoxic/gulp-stacksvg/compare/v0.1.0...v0.1.1
-[0.1.0]: https://github.com/firefoxic/gulp-stacksvg/releases/tag/v0.1.0
+[Unreleased]: https://github.com/firefoxic/conjure/compare/v0.1.2...HEAD
+[0.1.2]: https://github.com/firefoxic/conjure/compare/v0.1.1...v0.1.2
+[0.1.1]: https://github.com/firefoxic/conjure/compare/v0.1.0...v0.1.1
+[0.1.0]: https://github.com/firefoxic/conjure/releases/tag/v0.1.0
