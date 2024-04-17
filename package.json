@@ -56,7 +56,7 @@
 		"prepare": "husky",
 		"preversion": "pnpm test",
 		"postversion": "pnpm publish --access=public",
-		"postpublish": "git push origin --all && git push origin --tags",
+		"postpublish": "git push --follow-tags",
 		"lint": "eslint",
 		"test": "node --test",
 		"pretest": "pnpm lint"
