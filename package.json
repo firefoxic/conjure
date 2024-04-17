@@ -55,6 +55,7 @@
 	"scripts": {
 		"prepare": "husky",
 		"preversion": "pnpm test",
+		"version": "node utils/update-changelog.js && git add CHANGELOG.md",
 		"postversion": "pnpm publish --access=public",
 		"postpublish": "git push --follow-tags",
 		"lint": "eslint",
