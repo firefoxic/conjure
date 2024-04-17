@@ -3,13 +3,15 @@ import js from "@eslint/js"
 import stylisticJs from "@stylistic/eslint-plugin-js"
 
 export default [
-	js.configs.recommended,
 	{
 		languageOptions: {
 			globals: {
-				...globals.nodeBuildIn,
+				...globals.nodeBuiltin,
 			},
 		},
+	},
+	js.configs.recommended,
+	{
 		rules: {
 			"accessor-pairs": `error`,
 			"arrow-body-style": [
@@ -31,11 +33,19 @@ export default [
 			],
 			"guard-for-in": `error`,
 			"no-alert": `error`,
+			"no-irregular-whitespace": [
+				`error`,
+				{
+					skipComments: true,
+					skipRegExps: true,
+					skipTemplates: true,
+				},
+			],
 			"no-lonely-if": `error`,
 			"no-multi-assign": `error`,
-			"no-proto": `error`,
 			"no-nested-ternary": `error`,
 			"no-octal-escape": `error`,
+			"no-proto": `error`,
 			"no-prototype-builtins": `error`,
 			"no-return-assign": `error`,
 			"no-self-compare": `error`,
