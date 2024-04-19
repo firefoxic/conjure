@@ -37,14 +37,41 @@ conjure <command> [options]
 
 ### Options
 
-| Short | Long                | Type      | Default       | Description                                                                      |
-|-------|---------------------|-----------|---------------|----------------------------------------------------------------------------------|
-| `-i`  | `--inputDirectory`  | `String`  | `src/shared`  | Path to the directory containing raw files                                       |
-| `-o`  | `--outputDirectory` | `String`  | value of `-i` | Path to the directory where processed files will be placed                       |
-| `-d`  | `--originDensity`   | `Number`  | `2`           | Pixel density in dppx of the raw raster images                                   |
-| `-f`  | `--targetFormats`   | `String`  | `webp,avif`   | Comma-separated list of formats for output raster images                         |
-| `-a`  | `--addOriginFormat` | `Boolean` | `false`       | Add the original raster format to the list of output formats                     |
-| `-r`  | `--removeOrigin`    | `Boolean` | `false`       | Remove the original raster files and source favicons after successful processing |
+#### `-i`, `--inputDirectory`
+
+- _Type:_ `String`
+- _Default:_ `src/shared`
+- _Description:_ Path to the directory containing raw files
+
+#### `-o`, `--outputDirectory`
+
+- _Type:_ `String`
+- _Default:_ the value of `--inputDirectory`
+- _Description:_ Path to the directory where processed files will be placed
+
+#### `-d`, `--originDensity`
+
+- _Type:_ `Number`
+- _Default:_ `2`
+- _Description:_ Pixel density in dppx of the raw raster images
+
+#### `-f`, `--targetFormats`
+
+- _Type:_ `String`
+- _Default:_ `webp,avif`
+- _Description:_ Comma-separated list of formats for output raster images
+
+#### `-a`, `--addOriginFormat`
+
+- _Type:_ `Boolean`
+- _Default:_ `false`
+- _Description:_ Add the original raster format to the list of output formats
+
+#### `-r`, `--removeOrigin`
+
+- _Type:_ `Boolean`
+- _Default:_ `false`
+- _Description:_ Remove the original raster files and source favicons after successful processing
 
 ### Examples
 
