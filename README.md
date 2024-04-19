@@ -1,6 +1,11 @@
 # Conjure
 
-Conjure images, icons and favicons for your frontend project.
+🪄 Conjure images, icons and favicons for your frontend project.
+
+<picture>
+	<source srcset="https://raw.githubusercontent.com/firefoxic/conjure/main/example/dark@1x.webp 1x, https://raw.githubusercontent.com/firefoxic/conjure/main/example/dark@2x.webp 2x" width="414" height="482" media="( prefers-color-scheme: dark )">
+	<img src="https://raw.githubusercontent.com/firefoxic/conjure/main/example/light@1x.webp" srcset="https://raw.githubusercontent.com/firefoxic/conjure/main/example/light@2x.webp 2x" width="414" height="482" alt="Example showing the source files, and the files after running the 'conjure all -r' command.">
+</picture>
 
 ## Purpose
 
