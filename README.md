@@ -14,7 +14,11 @@ To install Conjure, you need to have Node.js installed on your machine. You c
 
 ```shell
 npm add @firefoxic/conjure -D
-# or
+```
+
+or
+
+```shell
 pnpm add @firefoxic/conjure -D
 ```
 
@@ -22,9 +26,35 @@ pnpm add @firefoxic/conjure -D
 
 Conjure is invoked via the command line:
 
-```shell
-conjure <command> [options]
-```
+- with globally installation:
+
+	```shell
+	conjure <command> [options]
+	```
+
+- with locally installation (in a project):
+
+	```shell
+	npm exec conjure <command> [options]
+	```
+
+	or
+
+	```shell
+	pnpm exec conjure <command> [options]
+	```
+
+- without installation:
+
+	```shell
+	npm exec @firefoxic/conjure <command> [options]
+	```
+
+	or
+
+	```shell
+	pnpm dlx @firefoxic/conjure <command> [options]
+	```
 
 ### Commands
 
