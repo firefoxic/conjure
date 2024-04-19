@@ -12,6 +12,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 - Now the `conjure favicons` command does not generate the entire set of files for each SVG found, including those nested in subdirectories. Instead, this command only works with files in the specified directory and expects at least one of `touch.svg`, `32.svg` and `16.svg` (preferably only the first two, and the third only if there is such a version in the design). See [README.md](./README.md) for details on preparing and working with these files.
 - Now the `-r` (`--removeOrigin`) option also applies to the `conjure favicons` command.
 
+### Added
+
+- Gereration of `Links.md` file with advice on the code of links for generated files, moving files, and fixing paths to files.
+
 ## [0.1.2] — 2024–04–17
 
 ### Fixed

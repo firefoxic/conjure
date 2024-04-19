@@ -77,6 +77,7 @@ conjure <command> [options]
 	- `icon-192.png` and `icon-192.webp` in size `192×192`
 	- `icon-512.png` and `icon-512.webp` in size `512×512`
 	- `manifest.webmanifest` with the `name` and `description` fields from your `package.json` and the `icons` field for the `192` and `512` files
+	- `Links.md` — advice on code of links for generated files, moving files, and fixing paths to files.
 
 	```shell
 	conjure favicons -i assets/favicons
