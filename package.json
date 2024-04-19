@@ -1,7 +1,7 @@
 {
 	"name": "@firefoxic/conjure",
 	"description": "🪄  Conjure images, icons and favicons for your frontend project.",
-	"version": "0.1.2",
+	"version": "1.0.0",
 	"type": "module",
 	"bin": {
 		"conjure": "bin/cli.js",
