@@ -55,7 +55,7 @@
 	"scripts": {
 		"prepare": "husky",
 		"preversion": "pnpm test",
-		"version": "node utils/update-changelog.js && git add CHANGELOG.md",
+		"version": "update-changelog && git add CHANGELOG.md",
 		"postversion": "pnpm publish --access=public",
 		"postpublish": "git push --follow-tags",
 		"lint": "eslint",
@@ -64,6 +64,7 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.0.0",
+		"@firefoxic/utils": "^0.1.1",
 		"@stylistic/eslint-plugin-js": "^1.7.2",
 		"eslint": "^9.0.0",
 		"globals": "^15.0.0",
