@@ -2,12 +2,25 @@
 	"name": "@firefoxic/conjure",
 	"description": "🪄  Conjure images, icons and favicons for your frontend project.",
 	"version": "1.0.0",
-	"type": "module",
+	"license": "MIT",
+	"author": {
+		"name": "Sergey Artemov",
+		"email": "firefoxic.dev@gmail.com"
+	},
+	"homepage": "https://github.com/firefoxic/conjure#readme",
+	"bugs": {
+		"url": "https://github.com/firefoxic/conjure/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/firefoxic/conjure"
+	},
 	"bin": {
 		"conjure": "bin/cli.js",
 		"whoosh": "bin/cli.js",
 		"woosh": "bin/cli.js"
 	},
+	"type": "module",
 	"exports": "./lib/index.js",
 	"files": [
 		"./lib/"
@@ -22,35 +35,6 @@
 		"meow": "^13.2.0",
 		"sharp": "^0.33.3",
 		"svgo": "^3.2.0"
-	},
-	"homepage": "https://github.com/firefoxic/conjure#readme",
-	"bugs": {
-		"url": "https://github.com/firefoxic/conjure/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/firefoxic/conjure"
-	},
-	"keywords": [
-		"conjure",
-		"image",
-		"icon",
-		"favicon",
-		"optimize",
-		"vector",
-		"svg",
-		"convert",
-		"raster",
-		"webp",
-		"avif",
-		"ico",
-		"prepare",
-		"frontend"
-	],
-	"license": "MIT",
-	"author": {
-		"name": "Sergey Artemov",
-		"email": "firefoxic.dev@gmail.com"
 	},
 	"scripts": {
 		"prepare": "husky",
@@ -67,5 +51,21 @@
 		"@firefoxic/eslint-config": "^1.0.0",
 		"eslint": "^9.2.0",
 		"husky": "^9.0.11"
-	}
+	},
+	"keywords": [
+		"conjure",
+		"image",
+		"icon",
+		"favicon",
+		"optimize",
+		"vector",
+		"svg",
+		"convert",
+		"raster",
+		"webp",
+		"avif",
+		"ico",
+		"prepare",
+		"frontend"
+	]
 }
