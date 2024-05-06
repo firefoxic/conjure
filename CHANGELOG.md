@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ## [Unreleased]
 
+### Fixed
+
+- Paths in the `webmanifest` are now generated correctly on Windows.
+
 ## [1.0.1] — 2024–05–06
 
 ### Fixed
