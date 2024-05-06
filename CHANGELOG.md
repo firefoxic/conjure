@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ## [Unreleased]
 
+## [1.0.2] — 2024–05–06
+
 ### Fixed
 
 - Paths in the `webmanifest` are now generated correctly on Windows.
@@ -47,7 +49,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 - Basic functionality.
 
-[Unreleased]: https://github.com/firefoxic/conjure/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/firefoxic/conjure/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/firefoxic/conjure/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/firefoxic/conjure/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/firefoxic/conjure/compare/v0.1.2...v1.0.0
 [0.1.2]: https://github.com/firefoxic/conjure/compare/v0.1.1...v0.1.2
