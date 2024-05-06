@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ## [Unreleased]
 
+## [1.0.1] — 2024–05–06
+
 ### Fixed
 
 - The `conjure favicons` command now works fine on Windows.
@@ -41,7 +43,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 - Basic functionality.
 
-[Unreleased]: https://github.com/firefoxic/conjure/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/firefoxic/conjure/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/firefoxic/conjure/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/firefoxic/conjure/compare/v0.1.2...v1.0.0
 [0.1.2]: https://github.com/firefoxic/conjure/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/firefoxic/conjure/compare/v0.1.0...v0.1.1
