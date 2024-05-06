@@ -15,7 +15,7 @@
 	"engines": {
 		"node": "^18.12 || >=20.9"
 	},
-	"packageManager": "pnpm@9.0.1",
+	"packageManager": "pnpm@9.0.6",
 	"dependencies": {
 		"globby": "^14.0.1",
 		"ico-endec": "^0.1.6",
@@ -63,11 +63,9 @@
 		"pretest": "pnpm lint"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.0.0",
 		"@firefoxic/utils": "^0.1.1",
-		"@stylistic/eslint-plugin-js": "^1.7.2",
-		"eslint": "^9.0.0",
-		"globals": "^15.0.0",
+		"@firefoxic/eslint-config": "^1.0.0",
+		"eslint": "^9.2.0",
 		"husky": "^9.0.11"
 	}
 }
