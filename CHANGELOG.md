@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 ### Fixed
 
 - The `conjure favicons` command now works fine on Windows.
+- The `webmanifest` is now generated with a final newline.
 
 ## [1.0.0] — 2024–04–19
 
