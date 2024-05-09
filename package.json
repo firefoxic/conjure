@@ -47,7 +47,7 @@
 		"pretest": "pnpm lint"
 	},
 	"devDependencies": {
-		"@firefoxic/utils": "^0.1.1",
+		"@firefoxic/update-changelog": "^0.1.0",
 		"@firefoxic/eslint-config": "^1.0.0",
 		"eslint": "^9.2.0",
 		"husky": "^9.0.11"
