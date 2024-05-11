@@ -1,5 +1,10 @@
 # Conjure
 
+[![License: MIT][license-image]][license-url]
+[![Changelog][changelog-image]][changelog-url]
+[![NPM version][npm-image]][npm-url]
+[![Test Status][test-image]][test-url]
+
 🪄 Conjure images, icons and favicons for your frontend project.
 
 <picture>
@@ -165,6 +170,14 @@ Conjure is invoked via the command line:
 	conjure all -r
 	```
 
-## License
+[license-url]: https://github.com/firefoxic/conjure/blob/main/LICENSE.md
+[license-image]: https://img.shields.io/badge/License-MIT-limegreen.svg
 
-This project is licensed under the MIT License — see the [LICENSE.md](./LICENSE.md) file for details.
+[changelog-url]: https://github.com/firefoxic/conjure/blob/main/CHANGELOG.md
+[changelog-image]: https://img.shields.io/badge/CHANGELOG-md-limegreen
+
+[npm-url]: https://npmjs.org/package/@firefoxic/conjure
+[npm-image]: https://badge.fury.io/js/@firefoxic%2Fconjure.svg
+
+[test-url]: https://github.com/firefoxic/conjure/actions
+[test-image]: https://github.com/firefoxic/conjure/actions/workflows/test.yml/badge.svg?branch=main
