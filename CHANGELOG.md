@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 ## [Unreleased]
 
+## [1.0.3] — 2024–05–24
+
 ### Fixed
 
 - The path to `icon-180.png` (Apple touch icon) is now correctly generated in `Links.md`.
@@ -53,7 +55,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 - Basic functionality.
 
-[Unreleased]: https://github.com/firefoxic/conjure/compare/v1.0.2...HEAD
+[Unreleased]: https://github.com/firefoxic/conjure/compare/v1.0.3...HEAD
+[1.0.3]: https://github.com/firefoxic/conjure/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/firefoxic/conjure/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/firefoxic/conjure/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/firefoxic/conjure/compare/v0.1.2...v1.0.0
