@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 ## [Unreleased]
 
+### Fixed
+
+- The path to `icon-180.png` (Apple touch icon) is now correctly generated in `Links.md`.
+
 ## [1.0.2] — 2024–05–06
 
 ### Fixed
