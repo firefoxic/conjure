@@ -28,7 +28,7 @@
 	"engines": {
 		"node": "^18.12 || >=20.9"
 	},
-	"packageManager": "pnpm@9.1.2",
+	"packageManager": "pnpm@9.3.0",
 	"dependencies": {
 		"globby": "^14.0.1",
 		"ico-endec": "^0.1.6",
@@ -48,8 +48,8 @@
 	},
 	"devDependencies": {
 		"@firefoxic/update-changelog": "^0.1.0",
-		"@firefoxic/eslint-config": "^1.0.0",
-		"eslint": "^9.3.0",
+		"@firefoxic/eslint-config": "^2.0.0",
+		"eslint": "^9.4.0",
 		"husky": "^9.0.11"
 	},
 	"keywords": [
