@@ -68,7 +68,7 @@ Conjure is invoked via the command line:
 
 ### Commands
 
-- `images` — Optimize SVGs and convert raster images to modern formats (Webp and Avif by default).
+- `images` — Optimize SVGs and convert raster images to modern formats (Avif and Webp by default).
 - `icons` — Optimize SVG icon files.
 - `favicons` — Convert the original SVG favicons (expect at least one of `touch.svg`, `32.svg`, and `16.svg`) to optimized vector and all raster favicons, including ICO format and necessary PNG and Webp, and also generate a webmanifest (read [this article about favicons](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs) by Andrey Sitnik).
 - `all` — Run all the above commands.
@@ -98,7 +98,7 @@ Conjure is invoked via the command line:
 #### `-f`, `--targetFormats`
 
 - _Type:_ `String`
-- _Default:_ `webp,avif`
+- _Default:_ `avif,webp`
 - _Description:_ Comma-separated list of formats for output raster images
 
 #### `-a`, `--addOriginFormat`
@@ -115,7 +115,7 @@ Conjure is invoked via the command line:
 
 ### Examples
 
-- In the `source/images` folder, optimize all SVGs and convert the raster images to `webp` and `avif` formats at the original size for `2x` pixel density and at a reduced size for `1x` pixel density; and after processing the raster images, delete their original files:
+- In the `source/images` folder, optimize all SVGs and convert the raster images to `avif` and `webp` formats at the original size for `2x` pixel density and at a reduced size for `1x` pixel density; and after processing the raster images, delete their original files:
 
 	```shell
 	conjure images --inputDirectory=source/images --removeOrigin
@@ -123,7 +123,7 @@ Conjure is invoked via the command line:
 
 	> #### Tip for exporting raster layers from layouts
 	>
-	> If you have finally managed to give up old formats (such as JPG and PNG) and use only modern Webp and Avif, it is better to export raster layers from Figma only to PNG. JPG will only add artifacts on them. Avoid unnecessary quality loss.
+	> If you have finally managed to give up old formats (such as JPG and PNG) and use only modern Avif and Webp, it is better to export raster layers from Figma only to PNG. JPG will only add artifacts on them. Avoid unnecessary quality loss.
 
 - Take all vector and raster images from the `raws/images` folder; optimize vector images and put them in `source/images`; convert raster images to `webp` format and to the original format, optimizing them for `2x` and `1x` pixel densities, placing these results also in `source/images`; when processing is completed, delete the original raster images from `raws/images`:
 

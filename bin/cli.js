@@ -10,7 +10,7 @@ Usage
 
 Commands
 	images
-		Optimize SVGs and convert raster images to modern formats (Webp and Avif by default).
+		Optimize SVGs and convert raster images to modern formats (Avif and Webp by default).
 
 	icons
 		Optimize SVG icon files.
@@ -42,7 +42,7 @@ Options
 
 	-f, --targetFormats
 		Type: String
-		Default: webp,avif
+		Default: avif,webp
 		Comma-separated list of formats for output raster images
 
 	-a, --addOriginFormat
@@ -82,7 +82,7 @@ Examples
 		targetFormats: {
 			"type": `string`,
 			"shortFlag": `f`,
-			"default": `webp,avif`,
+			"default": `avif,webp`,
 		},
 		addOriginFormat: {
 			"type": `boolean`,
