@@ -55,13 +55,18 @@ Options
 		Default: false
 		Remove the original raster files after successful processing
 
+	-m, --addMetaData
+		Type: Boolean
+		Default: false
+		Create JSON and JS files with metadata of the raster images
+
 Examples
 
-	$ conjure images --inputDirectory=source/images --removeOrigin
+	$ conjure images --inputDirectory=source/images --removeOrigin -m
 	$ conjure images -i raws/images -o source/images -f webp -a -r
 	$ conjure icons
 	$ conjure favicons -i assets/favicons
-	$ conjure all -r
+	$ conjure all -r -m
 
 `, {
 	importMeta: import.meta,
@@ -92,6 +97,11 @@ Examples
 		removeOrigin: {
 			"type": `boolean`,
 			"shortFlag": `r`,
+			"default": false,
+		},
+		addMetaData: {
+			"type": `boolean`,
+			"shortFlag": `m`,
 			"default": false,
 		},
 	},

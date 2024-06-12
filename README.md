@@ -113,12 +113,22 @@ Conjure is invoked via the command line:
 - _Default:_ `false`
 - _Description:_ Remove the original raster files and source favicons after successful processing
 
+#### `-m`, `--addMetaData`
+
+- _Type:_ `Boolean`
+- _Default:_ `false`
+- _Description:_ Create JSON and JS files with metadata of the raster images
+
+> #### Note: Don’t forget to specify the `-m` flag
+>
+> When processing raster images, the `-m` (`--addMetaData`) flag enables generation of metadata files in JSON and JS formats. Metadata files are convenient for generating the `picture` tag. For macro of templating engines (like Nunjucks) a JSON file is more suitable. And for a component of frameworks (especially Vite-based frameworks such as Astro) JS file is more convenient, because its dynamic imports when building a project will trigger hashing of image files and return paths to new files.
+
 ### Examples
 
-- In the `source/images` folder, optimize all SVGs and convert the raster images to `avif` and `webp` formats at the original size for `2x` pixel density and at a reduced size for `1x` pixel density; and after processing the raster images, delete their original files:
+- In the `source/images` folder, optimize all SVGs and convert the raster images to `avif` and `webp` formats at the original size for `2x` pixel density and at a reduced size for `1x` pixel density; and after processing the raster images, delete their original files and generate JSON and JS files with metadata:
 
 	```shell
-	conjure images --inputDirectory=source/images --removeOrigin
+	conjure images --inputDirectory=source/images --removeOrigin -m
 	```
 
 	> #### Tip for exporting raster layers from layouts
@@ -162,12 +172,12 @@ Conjure is invoked via the command line:
 	> - If you have only one variant and it's not `16×16`, it doesn't matter what you name the file, `32.svg` or `touch.svg` (as long as it's not `16.svg`) — a file with either of these two names will be used by `conjure` to generate the entire set of favicons.
 
 - Run all three special commands with default settings, but deleting the original raster images, i.e.:
-	- run `conjure images` in the `rc/shared/images` folder with deleting the original raster images,
+	- run `conjure images` in the `src/shared/images` folder with deleting the original raster images and generating JSON and JS files with metadata,
 	- run `conjure icons` in the ``src/shared/icons` folder,
 	- run `conjure favicons` in the ``src/shared/favicons` folder,
 
 	```shell
-	conjure all -r
+	conjure all -r -m
 	```
 
 [license-url]: https://github.com/firefoxic/conjure/blob/main/LICENSE.md

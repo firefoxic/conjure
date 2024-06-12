@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 ## [Unreleased]
 
+### Added
+
+- New CLI flag `-m` (`--addMetaData`), enabling which when processing raster images additionally generates metadata files in JSON and JS formats.
+
 ## [1.0.3] — 2024–05–24
 
 ### Fixed
