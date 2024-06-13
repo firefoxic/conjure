@@ -8,8 +8,8 @@
 🪄 Conjure images, icons and favicons for your frontend project.
 
 <picture>
-	<source srcset="https://raw.githubusercontent.com/firefoxic/conjure/main/example/dark.webp" width="414" height="482" media="(prefers-color-scheme: dark)">
-	<img src="https://raw.githubusercontent.com/firefoxic/conjure/main/example/light.webp" width="414" height="482" alt="Example showing the source files, and the files after running the 'conjure all -r' command.">
+	<source srcset="https://raw.githubusercontent.com/firefoxic/conjure/main/example/dark.webp" media="(prefers-color-scheme: dark)">
+	<img src="https://raw.githubusercontent.com/firefoxic/conjure/main/example/light.webp" alt="Example showing the source files, and the files after running the 'conjure all -r -m' command.">
 </picture>
 
 ## Purpose
