@@ -20,16 +20,16 @@ Conjure is a command line utility for optimizing vector images, converting ras
 
 ## Installation
 
-To install Conjure, you need to have Node.js installed on your machine. You can then install it via _npm_ or _pnpm_ in your project (or globally, then replace `-D` flag with `-g`):
-
-```shell
-npm add @firefoxic/conjure -D
-```
-
-or
+To install Conjure, you need to have Node.js installed on your machine. Then you can install in your project using _pnpm_ (for _npm_, just remove the first `p`):
 
 ```shell
 pnpm add @firefoxic/conjure -D
+```
+
+or globally
+
+```shell
+pnpm add @firefoxic/conjure -g
 ```
 
 ## Usage
@@ -45,22 +45,10 @@ Conjure is invoked via the command line:
 - with locally installation (in a project):
 
 	```shell
-	npm exec conjure <command> [options]
-	```
-
-	or
-
-	```shell
 	pnpm exec conjure <command> [options]
 	```
 
 - without installation:
-
-	```shell
-	npm exec @firefoxic/conjure <command> [options]
-	```
-
-	or
 
 	```shell
 	pnpm dlx @firefoxic/conjure <command> [options]
