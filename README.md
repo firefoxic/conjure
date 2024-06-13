@@ -89,6 +89,12 @@ Conjure is invoked via the command line:
 - _Default:_ the value of `--inputDirectory`
 - _Description:_ Path to the directory where processed files will be placed
 
+#### `-p`, `--publicDirectory`
+
+- _Type:_ `String`
+- _Default:_ `public`
+- _Description:_ Path to the directory with the static assets (e.g. favicons)
+
 #### `-d`, `--originDensity`
 
 - _Type:_ `Number`
@@ -111,7 +117,7 @@ Conjure is invoked via the command line:
 
 - _Type:_ `Boolean`
 - _Default:_ `false`
-- _Description:_ Remove the original raster files and source favicons after successful processing
+- _Description:_ Remove the original raster files after successful processing
 
 #### `-m`, `--addMetaData`
 
@@ -147,20 +153,18 @@ Conjure is invoked via the command line:
 	conjure icons
 	```
 
-- In the `assets/favicons` folder, convert files `touch.svg`, `32.svg` (and optionaly `16.svg`) to:
+- In the `assets` folder, convert files `touch.svg`, `32.svg` (and optionaly `16.svg`) to:
 	- `favicon.ico` in size `32×32` (and optionaly with second layer in size `16×16`)
-	- `icon.svg` — optimized version of `32.svg` (or `touch.svg` if `32.svg` and `16.svg` are missing)
-	- `icon-180.png` in size `180×180` for old iPhones
-	- `icon-192.png` and `icon-192.webp` in size `192×192`
-	- `icon-512.png` and `icon-512.webp` in size `512×512`
+	- `favicons/icon.svg` — optimized version of `32.svg` (or `touch.svg` if `32.svg` and `16.svg` are missing)
+	- `favicons/icon-180.png` in size `180×180` for old iPhones
+	- `favicons/icon-192.png` and `favicons/icon-192.webp` in size `192×192`
+	- `favicons/icon-512.png` and `favicons/icon-512.webp` in size `512×512`
 	- `manifest.webmanifest` with the `name` and `description` fields from your `package.json` and the `icons` field for the `192` and `512` files
 	- `Links.md` — advice on code of links for generated files, moving files, and fixing paths to files.
 
 	```shell
-	conjure favicons -i assets/favicons
+	conjure favicons -p assets
 	```
-
-	Move the resulting `favicon.ico` and `manifest.webmanifest` to the project directory, from where they will be moved to the root of the server. The default paths in `manifest.webmanifest` are formed with the expectation that the `manifest.webmanifest` file will be moved to the root of the project source (which corresponds to `src/` by default). In any case, double-check these paths to make sure they match the file structure of your project.
 
 	> #### Recommendations for the source favicon files
 	>
@@ -173,8 +177,8 @@ Conjure is invoked via the command line:
 
 - Run all three special commands with default settings, but deleting the original raster images, i.e.:
 	- run `conjure images` in the `src/shared/images` folder with deleting the original raster images and generating JSON and JS files with metadata,
-	- run `conjure icons` in the ``src/shared/icons` folder,
-	- run `conjure favicons` in the ``src/shared/favicons` folder,
+	- run `conjure icons` in the `src/shared/icons` folder,
+	- run `conjure favicons` in the `public` folder,
 
 	```shell
 	conjure all -r -m

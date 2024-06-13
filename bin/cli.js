@@ -35,6 +35,11 @@ Options
 		Default: value of --inputDirectory
 		Path to the directory where processed files will be placed
 
+	-p, --publicDirectory
+		Type: String
+		Default: public
+		Path to the directory with the static assets (e.g. favicons)
+
 	-d, --originDensity
 		Type: Number
 		Default: 2
@@ -65,7 +70,7 @@ Examples
 	$ conjure images --inputDirectory=source/images --removeOrigin -m
 	$ conjure images -i raws/images -o source/images -f webp -a -r
 	$ conjure icons
-	$ conjure favicons -i assets/favicons
+	$ conjure favicons -p assets/favicons
 	$ conjure all -r -m
 
 `, {
@@ -78,6 +83,11 @@ Examples
 		outputDirectory: {
 			type: `string`,
 			shortFlag: `o`,
+		},
+		publicDirectory: {
+			"type": `string`,
+			"shortFlag": `p`,
+			"default": `public`,
 		},
 		originDensity: {
 			"type": `number`,

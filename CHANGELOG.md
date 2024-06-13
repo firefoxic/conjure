@@ -7,8 +7,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 ## [Unreleased]
 
+### Changed
+
+- The `favicons` command no longer depends on the following options:
+	- `-i` — the path to the directory with the files to be processed is now specified with the `-p` option;
+	- `-o` — new files are created in the same directory as the original files (i.e., the directory specified by the `-p` option);
+	- `-r` — the original favicon files are now always deleted after processing is complete.
+- The `favicons` command now places only the `favicon.ico`, `manifest.webmanifest`, and `Links.md` files in the specified directory, with all other files being placed in the `favicons` subdirectory. This eliminates the need to manually move the listed files up one level. You only need to extract the `link` tags code from the `Links.md` file into your HTML layout and then delete the `Links.md` file.
+
 ### Added
 
+- New CLI option `-p` (`--publicDirectory`) for the favicons command, allowing you to specify a directory (`public` by default) with static assets where the source SVG files for generating favicons are expected.
 - New CLI flag `-m` (`--addMetaData`), enabling which when processing raster images additionally generates metadata files in JSON and JS formats.
 
 ## [1.0.3] — 2024–05–24
