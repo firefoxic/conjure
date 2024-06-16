@@ -176,10 +176,10 @@ Conjure is invoked via the command line:
 [license-image]: https://img.shields.io/badge/License-MIT-limegreen.svg
 
 [changelog-url]: https://github.com/firefoxic/conjure/blob/main/CHANGELOG.md
-[changelog-image]: https://img.shields.io/badge/CHANGELOG-md-limegreen
+[changelog-image]: https://img.shields.io/badge/Changelog-md-limegreen
 
 [npm-url]: https://npmjs.org/package/@firefoxic/conjure
-[npm-image]: https://badge.fury.io/js/@firefoxic%2Fconjure.svg
+[npm-image]: https://img.shields.io/npm/v/%40firefoxic%2Fconjure?logo=npm&color=limegreen
 
 [test-url]: https://github.com/firefoxic/conjure/actions
 [test-image]: https://github.com/firefoxic/conjure/actions/workflows/test.yml/badge.svg?branch=main
