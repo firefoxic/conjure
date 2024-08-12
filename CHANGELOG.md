@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 ## [Unreleased]
 
+### Added
+
+- The `--addMetaData` (`-m`) flag is now also available for the `icons` command. Enabling it will create an `index.css` file in the output directory, which contains registrations of custom properties with paths to icons.
+
 ## [2.0.0] — 2024–06–13
 
 ### Changed

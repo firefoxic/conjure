@@ -111,7 +111,7 @@ Conjure is invoked via the command line:
 
 - _Type:_ `Boolean`
 - _Default:_ `false`
-- _Description:_ Create JSON and JS files with metadata of the raster images
+- _Description:_ Create JSON and JS files with metadata of the raster images and CSS file for the icons
 
 > #### Note: Don’t forget to specify the `-m` flag
 >
@@ -135,10 +135,10 @@ Conjure is invoked via the command line:
 	conjure images -i raws/images -o source/images -f webp -a -r
 	```
 
-- Optimize SVG icons in the default `src/shared/icons` folder:
+- Optimize SVG icons in the default `src/shared/icons` folder and create the CSS file that contain custom properties with paths to the icons:
 
 	```shell
-	conjure icons
+	conjure icons -m
 	```
 
 - In the `assets` folder, convert files `touch.svg`, `32.svg` (and optionaly `16.svg`) to:

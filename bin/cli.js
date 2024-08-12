@@ -63,7 +63,7 @@ Options
 	-m, --addMetaData
 		Type: Boolean
 		Default: false
-		Create JSON and JS files with metadata of the raster images
+		Create JSON and JS files with metadata of the raster images and CSS file for the icons
 
 Examples
 
