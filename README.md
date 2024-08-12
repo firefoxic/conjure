@@ -87,7 +87,7 @@ Conjure is invoked via the command line:
 
 - _Type:_ `Number`
 - _Default:_ `2`
-- _Description:_ Pixel density in dppx of the raw raster images
+- _Description:_ Pixel density in dppx of the raw raster images (`0` works like `1`, but without adding the density suffix to the filename)
 
 #### `-f`, `--targetFormats`
 

@@ -44,6 +44,7 @@ Options
 		Type: Number
 		Default: 2
 		Pixel density in dppx of the raw raster images
+		(0 means 1, but without adding the density suffix to the filename)
 
 	-f, --targetFormats
 		Type: String

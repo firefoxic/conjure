@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 ### Added
 
 - The `--addMetaData` (`-m`) flag is now also available for the `icons` command. Enabling it will create an `index.css` file in the output directory, which contains registrations of custom properties with paths to icons.
+- The `--originDensity` (`-d`) option now takes the value `0`. This works like the `1` value, but without adding the density suffix to the filename.
 
 ## [2.0.0] — 2024–06–13
 
