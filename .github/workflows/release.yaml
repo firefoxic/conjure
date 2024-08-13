@@ -45,4 +45,4 @@ jobs:
           body: ${{ env.RELEASE_DESCRIPTION }}
           draft: false
           prerelease: false
-      - run: git switch main && git rebase release && git push origin main
+      - run: git fetch --all && git switch main && git rebase release && git push origin main
