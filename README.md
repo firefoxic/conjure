@@ -182,4 +182,4 @@ Conjure is invoked via the command line:
 [npm-image]: https://img.shields.io/npm/v/%40firefoxic%2Fconjure?logo=npm&color=limegreen
 
 [test-url]: https://github.com/firefoxic/conjure/actions
-[test-image]: https://github.com/firefoxic/conjure/actions/workflows/test.yml/badge.svg?branch=main
+[test-image]: https://github.com/firefoxic/conjure/actions/workflows/test.yaml/badge.svg?branch=main
