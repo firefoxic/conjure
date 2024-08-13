@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 ## [Unreleased]
 
+## [2.1.0] — 2024–08–13
+
 ### Added
 
 - The `--addMetaData` (`-m`) flag is now also available for the `icons` command. Enabling it will create an `index.css` file in the output directory, which contains registrations of custom properties with paths to icons.
@@ -75,7 +77,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 - Basic functionality.
 
-[Unreleased]: https://github.com/firefoxic/conjure/compare/v2.0.0...HEAD
+[Unreleased]: https://github.com/firefoxic/conjure/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/firefoxic/conjure/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/firefoxic/conjure/compare/v1.0.3...v2.0.0
 [1.0.3]: https://github.com/firefoxic/conjure/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/firefoxic/conjure/compare/v1.0.1...v1.0.2
