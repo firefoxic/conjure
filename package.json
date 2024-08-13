@@ -43,7 +43,7 @@
 		"test": "node --test",
 		"preversion": "pnpm test",
 		"version": "update-changelog",
-		"postversion": "pnpm publish --access=public",
+		"postversion": "pnpm publish --provenance --access public --no-git-checks",
 		"postpublish": "git push --follow-tags"
 	},
 	"devDependencies": {
