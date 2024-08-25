@@ -4,4 +4,8 @@ git stash -ku
 
 trap "git stash pop" EXIT
 
-pnpm test
+staged=$(git --no-pager diff --staged --name-only | grep -E '\.js$')
+
+if [ -n "$staged" ]; then
+	pnpm exec eslint `echo $staged` && node --test
+fi
