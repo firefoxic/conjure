@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 ## [Unreleased]
 
+### Fixed
+
+- The `images` command with the `-r` flag now removes the source file only if no errors occurred during its processing.
+
 ## [2.1.0] — 2024–08–13
 
 ### Added
