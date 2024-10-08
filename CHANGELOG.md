@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 ### Fixed
 
 - The `images` command with the `-r` flag now removes the source file only if no errors occurred during its processing.
+- Error messages for the `images` command are now more readable.
 
 ## [2.1.0] — 2024–08–13
 
