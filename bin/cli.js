@@ -4,7 +4,7 @@ import meow from "meow"
 
 import { conjureAll, conjureFavicons, conjureIcons, conjureImages } from "../lib/index.js"
 
-const cli = meow(`
+let cli = meow(`
 Usage
 	$ conjure <command> [options]
 
@@ -118,9 +118,9 @@ Examples
 	},
 })
 
-const [command] = cli.input
+let [command] = cli.input
 
-const options = { command, ...cli.flags }
+let options = { command, ...cli.flags }
 
 if (!(`inputDirectory` in cli.flags)) {
 	options.inputDirectory = `src/shared${command === `all` ? `` : `/${command}`}`

@@ -26,14 +26,15 @@
 		"./lib/"
 	],
 	"engines": {
+		"pnpm": "^9.12.1",
 		"node": "^18.12 || >=20.9"
 	},
-	"packageManager": "pnpm@9.7.0",
+	"packageManager": "pnpm@9.12.1",
 	"dependencies": {
 		"globby": "^14.0.2",
 		"ico-endec": "^0.1.6",
 		"meow": "^13.2.0",
-		"sharp": "^0.33.4",
+		"sharp": "^0.33.5",
 		"svgo": "^3.3.2"
 	},
 	"scripts": {
@@ -47,9 +48,9 @@
 		"postpublish": "git push --follow-tags"
 	},
 	"devDependencies": {
-		"@firefoxic/update-changelog": "^0.2.0",
-		"@firefoxic/eslint-config": "^2.0.0",
-		"eslint": "^9.9.0"
+		"@firefoxic/update-changelog": "^0.2.1",
+		"@firefoxic/eslint-config": "^3.0.1",
+		"eslint": "^9.12.0"
 	},
 	"keywords": [
 		"conjure",

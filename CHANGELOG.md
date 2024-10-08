@@ -14,14 +14,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 - The verbose and useless `images` command execution messages have been replaced by a compact and clear progressbar.
 - Source file extensions can now be in uppercase.
 
-## [2.1.0] — 2024–08–13
+## [2.1.0] — 2024–08–13
 
 ### Added
 
 - The `--addMetaData` (`-m`) flag is now also available for the `icons` command. Enabling it will create an `index.css` file in the output directory, which contains registrations of custom properties with paths to icons.
 - The `--originDensity` (`-d`) option now takes the value `0`. This works like the `1` value, but without adding the density suffix to the filename.
 
-## [2.0.0] — 2024–06–13
+## [2.0.0] — 2024–06–13
 
 ### Changed
 
@@ -36,26 +36,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 - New CLI option `-p` (`--publicDirectory`) for the favicons command, allowing you to specify a directory (`public` by default) with static assets where the source SVG files for generating favicons are expected.
 - New CLI flag `-m` (`--addMetaData`), enabling which when processing raster images additionally generates metadata files in JSON and JS formats.
 
-## [1.0.3] — 2024–05–24
+## [1.0.3] — 2024–05–24
 
 ### Fixed
 
 - The path to `icon-180.png` (Apple touch icon) is now correctly generated in `Links.md`.
 
-## [1.0.2] — 2024–05–06
+## [1.0.2] — 2024–05–06
 
 ### Fixed
 
 - Paths in the `webmanifest` are now generated correctly on Windows.
 
-## [1.0.1] — 2024–05–06
+## [1.0.1] — 2024–05–06
 
 ### Fixed
 
 - The `conjure favicons` command now works fine on Windows.
 - The `webmanifest` is now generated with a final newline.
 
-## [1.0.0] — 2024–04–19
+## [1.0.0] — 2024–04–19
 
 ### Changed
 
@@ -66,19 +66,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 - Gereration of `Links.md` file with advice on the code of links for generated files, moving files, and fixing paths to files.
 
-## [0.1.2] — 2024–04–17
+## [0.1.2] — 2024–04–17
 
 ### Fixed
 
 - No longer requires `pnpm` for package users.
 
-## [0.1.1] — 2024–04–10
+## [0.1.1] — 2024–04–10
 
 ### Fixed
 
 - Paths to icons in the generated webmanifest.
 
-## [0.1.0] — 2024–04–05
+## [0.1.0] — 2024–04–05
 
 ### Added
 
