@@ -11,6 +11,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 - The `images` command with the `-r` flag now removes the source file only if no errors occurred during its processing.
 - Error messages for the `images` command are now more readable.
+- The verbose and useless `images` command execution messages have been replaced by a compact and clear progressbar.
 
 ## [2.1.0] — 2024–08–13
 
