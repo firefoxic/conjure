@@ -4,6 +4,13 @@ import meow from "meow"
 
 import { conjureAll, conjureFavicons, conjureIcons, conjureImages } from "../lib/index.js"
 
+// TODO: Remove this after glob stops emitting ExperimentalWarning
+process.emitWarning = (warning, type) => {
+	if (type === `ExperimentalWarning`) return
+
+	return process.emitWarning(warning, type)
+}
+
 let cli = meow(`
 Usage
 	$ conjure <command> [options]
