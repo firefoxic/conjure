@@ -26,10 +26,10 @@
 		"./lib/"
 	],
 	"engines": {
-		"pnpm": "^9.12.1",
+		"pnpm": "^9.12.3",
 		"node": "^18.12 || >=20.9"
 	},
-	"packageManager": "pnpm@9.12.1",
+	"packageManager": "pnpm@9.12.3",
 	"dependencies": {
 		"globby": "^14.0.2",
 		"ico-endec": "^0.1.6",
@@ -38,7 +38,7 @@
 		"svgo": "^3.3.2"
 	},
 	"scripts": {
-		"prepare": "git config core.hooksPath .git-hooks || echo 'Not in a git repo'",
+		"prepare": "git config core.hooksPath .git-hooks || true",
 		"lint": "eslint",
 		"pretest": "pnpm lint",
 		"test": "node --test",
@@ -50,7 +50,7 @@
 	"devDependencies": {
 		"@firefoxic/update-changelog": "^0.2.1",
 		"@firefoxic/eslint-config": "^3.0.1",
-		"eslint": "^9.12.0"
+		"eslint": "^9.13.0"
 	},
 	"keywords": [
 		"conjure",

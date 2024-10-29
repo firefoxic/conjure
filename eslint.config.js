@@ -1,5 +1,6 @@
 import { default as firefoxicEslintConfig, globals } from "@firefoxic/eslint-config"
 
+/** @type {import('eslint').Linter.Config[]} */
 export default [
 	{
 		languageOptions: {
@@ -9,14 +10,4 @@ export default [
 		},
 	},
 	...firefoxicEslintConfig,
-	{
-		rules: {
-			"no-irregular-whitespace": [
-				`error`,
-				{
-					skipTemplates: true,
-				},
-			],
-		},
-	},
 ]
