@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 ### Fixed
 
+- Output directory and file names are now correctly generated when `./` is specified in the `-i` flag.
 - Progressbar no longer erases error messages.
 
 ## [2.1.1] — 2024–10–08
