@@ -27,7 +27,7 @@
 	],
 	"engines": {
 		"pnpm": "^9.12.3",
-		"node": "^18.12 || >=20.9"
+		"node": "^20.13 || >=22.11"
 	},
 	"packageManager": "pnpm@9.12.3",
 	"dependencies": {
@@ -48,9 +48,9 @@
 		"postpublish": "git push --follow-tags"
 	},
 	"devDependencies": {
-		"@firefoxic/update-changelog": "^0.2.1",
-		"@firefoxic/eslint-config": "^3.0.1",
-		"eslint": "^9.13.0"
+		"@firefoxic/update-changelog": "^1.0.0",
+		"@firefoxic/eslint-config": "^4.0.0",
+		"eslint": "^9.14.0"
 	},
 	"keywords": [
 		"conjure",
