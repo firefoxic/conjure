@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 ## [Unreleased]
 
+### Fixed
+
+- The progressbar now fills correctly with the `-a` flag.
+
 ## [2.1.2] — 2024–10–29
 
 ### Fixed
