@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 ## [Unreleased]
 
+## [3.0.0] — 2024–12–15
+
 ### Changed
 
 - Full option names are now spelled out in the kebab-case.
@@ -105,7 +107,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 - Basic functionality.
 
-[Unreleased]: https://github.com/firefoxic/conjure/compare/v2.1.3...HEAD
+[Unreleased]: https://github.com/firefoxic/conjure/compare/v3.0.0...HEAD
+[3.0.0]: https://github.com/firefoxic/conjure/compare/v2.1.3...v3.0.0
 [2.1.3]: https://github.com/firefoxic/conjure/compare/v2.1.2...v2.1.3
 [2.1.2]: https://github.com/firefoxic/conjure/compare/v2.1.1...v2.1.2
 [2.1.1]: https://github.com/firefoxic/conjure/compare/v2.1.0...v2.1.1
