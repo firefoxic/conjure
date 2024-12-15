@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 ### Changed
 
 - Full option names are now spelled out in the kebab-case.
+- The `--target-format` option now accepts a single value, but you can specify the option multiple times to pass multiple values. For example, the equivalent of the default: `-f avif -f webp`.
 
 ## [2.1.3] — 2024–11–06
 

@@ -38,8 +38,9 @@ let cli = meow(`
                             0 means 1, but without adding the density suffix to the filename.
                             (Default: 2)
 
-    --target-formats    -f  Comma-separated list of formats for output raster images
-                            (Default: avif,webp)
+    --target-format     -f  Output raster image format.
+	                        To specify multiple formats, specify an option for each.
+                            (Default: ["avif", "webp"])
 
     --add-origin-format -a  Add the original raster format to the list of output formats.
                             (Default: false)
@@ -87,7 +88,8 @@ let cli = meow(`
 		targetFormats: {
 			"type": `string`,
 			"shortFlag": `f`,
-			"default": `avif,webp`,
+			"default": [`avif`, `webp`],
+			"isMultiple": true,
 		},
 		addOriginFormat: {
 			"type": `boolean`,
@@ -118,8 +120,6 @@ if (!(`inputDirectory` in cli.flags)) {
 if (!(`outputDirectory` in cli.flags)) {
 	options.outputDirectory = options.inputDirectory
 }
-
-options.targetFormats = options.targetFormats.split(`,`).map((format) => format.trim())
 
 switch (command) {
 	case `images`:

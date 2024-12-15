@@ -85,10 +85,10 @@ Conjure is invoked via the command line:
 - _Default:_ `2`
 - _Description:_ Pixel density in dppx of the raw raster images (`0` works like `1`, but without adding the density suffix to the filename)
 
-#### `-f`, `--target-formats`
+#### `-f`, `--target-format`
 
-- _Default:_ `avif,webp`
-- _Description:_ Comma-separated list of formats for output raster images
+- _Default:_ `["avif", "webp"]`
+- _Description:_ Output raster image format. To specify multiple formats, specify an option for each.
 
 #### `-a`, `--add-origin-format`
 
