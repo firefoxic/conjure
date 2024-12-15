@@ -5,74 +5,63 @@ import meow from "meow"
 import { conjureAll, conjureFavicons, conjureIcons, conjureImages } from "../lib/index.js"
 
 let cli = meow(`
-Usage
-	$ conjure <command> [options]
+  Usage
+    $ conjure <command> [options]
 
-Commands
-	images
-		Optimize SVGs and convert raster images to modern formats (Avif and Webp by default).
+  Commands
+    images
+      Optimize SVGs and convert raster images to modern formats (Avif and Webp by default).
 
-	icons
-		Optimize SVG icon files.
+    icons
+      Optimize SVG icon files.
 
-	favicons
-		Convert the original SVG favicons (expect at least one of touch.svg, 32.svg, and 16.svg) to optimized vector favicon and all raster favicons, including ICO format and necessary PNG and Webp, and also generate a webmanifest
+    favicons
+      Convert the original SVG favicons (expect at least one of touch.svg, 32.svg, and 16.svg) to optimized vector favicon and all raster favicons, including ICO format and necessary PNG and Webp, and also generate a webmanifest
 
-	all
-		Run all the above commands.
-		Individual commands handle the contents of the specified directory. But the general all command expects the path to the directory containing the images, icons and favicons directories.
+    all
+      Run all the above commands.
+      Individual commands handle the contents of the specified directory. But the general all command expects the path to the directory containing the images, icons and favicons directories.
 
 
-Options
+  Options
 
-	-i, --inputDirectory
-		Type: String
-		Default: src/shared/<command>
-		Path to the directory containing raw files
+    --input-directory   -i  Path to the directory containing raw files.
+                            (Default: src/shared/<command>)
 
-	-o, --outputDirectory
-		Type: String
-		Default: value of --inputDirectory
-		Path to the directory where processed files will be placed
+    --output-directory  -o  Path to the directory where processed files will be placed.
+                            (Default: value of --inputDirectory)
 
-	-p, --publicDirectory
-		Type: String
-		Default: public
-		Path to the directory with the static assets (e.g. favicons)
+    --public-directory  -p  Path to the directory with the static assets (e.g. favicons).
+                            (Default: public)
 
-	-d, --originDensity
-		Type: Number
-		Default: 2
-		Pixel density in dppx of the raw raster images
-		(0 means 1, but without adding the density suffix to the filename)
+    --origin-density    -d  Pixel density in dppx of the raw raster images.
+                            0 means 1, but without adding the density suffix to the filename.
+                            (Default: 2)
 
-	-f, --targetFormats
-		Type: String
-		Default: avif,webp
-		Comma-separated list of formats for output raster images
+    --target-formats    -f  Comma-separated list of formats for output raster images
+                            (Default: avif,webp)
 
-	-a, --addOriginFormat
-		Type: Boolean
-		Default: false
-		Add the original raster format to the list of output formats
+    --add-origin-format -a  Add the original raster format to the list of output formats.
+                            (Default: false)
 
-	-r, --removeOrigin
-		Type: Boolean
-		Default: false
-		Remove the original raster files after successful processing
+    --remove-origin     -r  Remove the original raster files after successful processing.
+                            (Default: false)
 
-	-m, --addMetaData
-		Type: Boolean
-		Default: false
-		Create JSON and JS files with metadata of the raster images and CSS file for the icons
+    --add-meta-data     -m  Create JSON and JS files with metadata of the raster images
+	                        and CSS file for the icons.
+                            (Default: false)
 
-Examples
+    --version               Print version and exit
 
-	$ conjure images --inputDirectory=source/images --removeOrigin -m
-	$ conjure images -i raws/images -o source/images -f webp -a -r
-	$ conjure icons
-	$ conjure favicons -p assets/favicons
-	$ conjure all -r -m
+    --help                  Print this help and exit
+
+  Examples
+
+    $ conjure images --inputDirectory=source/images --removeOrigin -m
+    $ conjure images -i raws/images -o source/images -f webp -a -r
+    $ conjure icons
+    $ conjure favicons -p assets/favicons
+    $ conjure all -r -m
 
 `, {
 	importMeta: import.meta,

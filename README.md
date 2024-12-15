@@ -65,64 +65,56 @@ Conjure is invoked via the command line:
 
 ### Options
 
-#### `-i`, `--inputDirectory`
+#### `-i`, `--input-directory`
 
-- _Type:_ `String`
 - _Default:_ `src/shared`
 - _Description:_ Path to the directory containing raw files
 
-#### `-o`, `--outputDirectory`
+#### `-o`, `--output-directory`
 
-- _Type:_ `String`
 - _Default:_ the value of `--inputDirectory`
 - _Description:_ Path to the directory where processed files will be placed
 
-#### `-p`, `--publicDirectory`
+#### `-p`, `--public-directory`
 
-- _Type:_ `String`
 - _Default:_ `public`
 - _Description:_ Path to the directory with the static assets (e.g. favicons)
 
-#### `-d`, `--originDensity`
+#### `-d`, `--origin-density`
 
-- _Type:_ `Number`
 - _Default:_ `2`
 - _Description:_ Pixel density in dppx of the raw raster images (`0` works like `1`, but without adding the density suffix to the filename)
 
-#### `-f`, `--targetFormats`
+#### `-f`, `--target-formats`
 
-- _Type:_ `String`
 - _Default:_ `avif,webp`
 - _Description:_ Comma-separated list of formats for output raster images
 
-#### `-a`, `--addOriginFormat`
+#### `-a`, `--add-origin-format`
 
-- _Type:_ `Boolean`
 - _Default:_ `false`
 - _Description:_ Add the original raster format to the list of output formats
 
-#### `-r`, `--removeOrigin`
+#### `-r`, `--remove-origin`
 
-- _Type:_ `Boolean`
 - _Default:_ `false`
 - _Description:_ Remove the original raster files after successful processing
 
-#### `-m`, `--addMetaData`
+#### `-m`, `--add-meta-data`
 
-- _Type:_ `Boolean`
 - _Default:_ `false`
 - _Description:_ Create JSON and JS files with metadata of the raster images and CSS file for the icons
 
 > #### Note: Don’t forget to specify the `-m` flag
 >
-> When processing raster images, the `-m` (`--addMetaData`) flag enables generation of metadata files in JSON and JS formats. Metadata files are convenient for generating the `picture` tag. For macro of templating engines (like Nunjucks) a JSON file is more suitable. And for a component of frameworks (especially Vite-based frameworks such as Astro) JS file is more convenient, because its dynamic imports when building a project will trigger hashing of image files and return paths to new files.
+> When processing raster images, the `-m` (`--add-meta-data`) flag enables generation of metadata files in JSON and JS formats. Metadata files are convenient for generating the `picture` tag. For macro of templating engines (like Nunjucks) a JSON file is more suitable. And for a component of frameworks (especially Vite-based frameworks such as Astro) JS file is more convenient, because its dynamic imports when building a project will trigger hashing of image files and return paths to new files.
 
 ### Examples
 
 - In the `source/images` folder, optimize all SVGs and convert the raster images to `avif` and `webp` formats at the original size for `2x` pixel density and at a reduced size for `1x` pixel density; and after processing the raster images, delete their original files and generate JSON and JS files with metadata:
 
 	```shell
-	conjure images --inputDirectory=source/images --removeOrigin -m
+	conjure images --input-directory=source/images --remove-origin --add-meta-data
 	```
 
 	> #### Tip for exporting raster layers from layouts

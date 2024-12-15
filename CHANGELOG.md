@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 ## [Unreleased]
 
+### Changed
+
+- Full option names are now spelled out in the kebab-case.
+
 ## [2.1.3] — 2024–11–06
 
 ### Fixed
