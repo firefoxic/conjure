@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 ## [Unreleased]
 
+### Fixed
+
+- The `maxDensity` field in metadata files when `-max-density 1` is specified now gets the correct value instead of the erroneous `null`.
+
 ## [3.0.0] — 2024–12–15
 
 ### Changed
