@@ -1,7 +1,7 @@
 {
 	"name": "@firefoxic/conjure",
 	"description": "🪄  Conjure images, icons and favicons for your frontend project.",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"license": "MIT",
 	"author": {
 		"name": "Sergey Artemov",
