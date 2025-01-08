@@ -26,10 +26,8 @@
 		"./lib/"
 	],
 	"engines": {
-		"pnpm": "^9.12.3",
 		"node": "^20.13 || >=22.11"
 	},
-	"packageManager": "pnpm@9.15.0",
 	"dependencies": {
 		"globby": "^14.0.2",
 		"ico-endec": "^0.1.6",
