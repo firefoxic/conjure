@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 ### Changed
 
+- Apple touch icons are no longer generated.
 - Webp touch icons are no longer generated.
 - The minimum required `node.js` version has been increased to `22.18.0`. This has reduced the number of dependencies.
 

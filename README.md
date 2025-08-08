@@ -136,7 +136,6 @@ Conjure is invoked via the command line:
 - In the `assets` folder, convert files `touch.svg`, `32.svg` (and optionaly `16.svg`) to:
 	- `favicon.ico` in size `32×32` (and optionaly with second layer in size `16×16`)
 	- `favicons/icon.svg` — optimized version of `32.svg` (or `touch.svg` if `32.svg` and `16.svg` are missing)
-	- `favicons/icon-180.png` in size `180×180` for old iPhones
 	- `favicons/icon-192.png` in size `192×192`
 	- `favicons/icon-512.png` in size `512×512`
 	- `manifest.webmanifest` with the `name` and `description` fields from your `package.json` and the `icons` field for the `192` and `512` files
