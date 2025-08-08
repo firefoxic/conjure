@@ -58,7 +58,7 @@ Conjure is invoked via the command line:
 
 - `images` — Optimize SVGs and convert raster images to modern formats (Avif and Webp by default).
 - `icons` — Optimize SVG icon files.
-- `favicons` — Convert the original SVG favicons (expect at least one of `touch.svg`, `32.svg`, and `16.svg`) to optimized vector and all raster favicons, including ICO format and necessary PNG and Webp, and also generate a webmanifest (read [this article about favicons](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs) by Andrey Sitnik).
+- `favicons` — Convert the original SVG favicons (expect at least one of `touch.svg`, `32.svg`, and `16.svg`) to optimized vector and all raster favicons, including ICO format and necessary PNG, and also generate a webmanifest (read [this article about favicons](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs) by Andrey Sitnik).
 - `all` — Run all the above commands.
 
 	> **Notice**: Individual commands handle the contents of the specified directory. But the general `all` command expects the path to the directory containing the `images`, `icons` and `favicons` directories (see [examples](#examples) below).
@@ -137,8 +137,8 @@ Conjure is invoked via the command line:
 	- `favicon.ico` in size `32×32` (and optionaly with second layer in size `16×16`)
 	- `favicons/icon.svg` — optimized version of `32.svg` (or `touch.svg` if `32.svg` and `16.svg` are missing)
 	- `favicons/icon-180.png` in size `180×180` for old iPhones
-	- `favicons/icon-192.png` and `favicons/icon-192.webp` in size `192×192`
-	- `favicons/icon-512.png` and `favicons/icon-512.webp` in size `512×512`
+	- `favicons/icon-192.png` in size `192×192`
+	- `favicons/icon-512.png` in size `512×512`
 	- `manifest.webmanifest` with the `name` and `description` fields from your `package.json` and the `icons` field for the `192` and `512` files
 	- `Links.md` — advice on code of links for generated files, moving files, and fixing paths to files.
 

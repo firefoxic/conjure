@@ -16,7 +16,7 @@ let cli = meow(`
       Optimize SVG icon files.
 
     favicons
-      Convert the original SVG favicons (expect at least one of touch.svg, 32.svg, and 16.svg) to optimized vector favicon and all raster favicons, including ICO format and necessary PNG and Webp, and also generate a webmanifest
+      Convert the original SVG favicons (expect at least one of touch.svg, 32.svg, and 16.svg) to optimized vector favicon and all raster favicons, including ICO format and necessary PNG, and also generate a webmanifest
 
     all
       Run all the above commands.
