@@ -6,6 +6,9 @@ mergeGitBranchLockfilesBranchPattern:
   - main
   - release*
 
+onlyBuiltDependencies:
+  - sharp
+
 shellEmulator: true
 
 verifyDepsBeforeRun: install

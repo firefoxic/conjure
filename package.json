@@ -29,11 +29,11 @@
 		"node": "^20.13 || >=22.11"
 	},
 	"dependencies": {
-		"globby": "^14.0.2",
+		"globby": "14.1.0",
 		"ico-endec": "^0.1.6",
 		"meow": "^13.2.0",
-		"sharp": "^0.34.2",
-		"svgo": "^3.3.2"
+		"sharp": "^0.34.3",
+		"svgo": "^4.0.0"
 	},
 	"scripts": {
 		"prepare": "git config core.hooksPath .githooks",
@@ -48,7 +48,7 @@
 	"devDependencies": {
 		"@firefoxic/update-changelog": "^1.0.0",
 		"@firefoxic/eslint-config": "^5.0.0",
-		"eslint": "^9.17.0"
+		"eslint": "9.33.0"
 	},
 	"keywords": [
 		"conjure",
