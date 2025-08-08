@@ -26,10 +26,9 @@
 		"./lib/"
 	],
 	"engines": {
-		"node": "^20.13 || >=22.11"
+		"node": ">=22.18"
 	},
 	"dependencies": {
-		"globby": "14.1.0",
 		"ico-endec": "^0.1.6",
 		"meow": "^13.2.0",
 		"sharp": "^0.34.3",
