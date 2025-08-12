@@ -14,6 +14,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 - The processing of a specific image will now be skipped if the target formats specified do not match those available in the metadata file for that image.
 - The minimum required `node.js` version has been increased to `22.18.0`. This has reduced the number of dependencies.
 
+### Fixed
+
+- Repeated image optimization runs no longer create duplicates in the `sizes` field of the metadata file.
+
 ## [3.0.1] — 2024–12–25
 
 ### Fixed
