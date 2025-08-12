@@ -11,6 +11,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 - Apple touch icons are no longer generated.
 - Webp touch icons are no longer generated.
+- The processing of a specific image will now be skipped if the target formats specified do not match those available in the metadata file for that image.
 - The minimum required `node.js` version has been increased to `22.18.0`. This has reduced the number of dependencies.
 
 ## [3.0.1] — 2024–12–25
