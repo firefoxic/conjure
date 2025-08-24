@@ -15,6 +15,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 - The breakpoint suffix in raster image file names must now begin with `~` instead of `-`. For example, `cat-768.png` must be renamed to `cat~768.png`.
 - The minimum required `node.js` version has been increased to `22.18.0`. This has reduced the number of dependencies.
 
+### Added
+
+- The metadata files now include a `name` field with the image name without suffixes.
+
 ### Fixed
 
 - Repeated image optimization runs no longer create duplicates in the `sizes` field of the metadata file.
