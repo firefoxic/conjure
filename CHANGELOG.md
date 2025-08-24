@@ -34,7 +34,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 ### Fixed
 
-- The `maxDensity` field in metadata files when `-max-density 1` is specified now gets the correct value instead of the erroneous `null`.
+- The `maxDensity` field in metadata files when `--origin-density 1` is specified now gets the correct value instead of the erroneous `null`.
 
 ## [3.0.0] — 2024–12–15
 
@@ -70,8 +70,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 ### Added
 
-- The `--addMetaData` (`-m`) flag is now also available for the `icons` command. Enabling it will create an `index.css` file in the output directory, which contains registrations of custom properties with paths to icons.
-- The `--originDensity` (`-d`) option now takes the value `0`. This works like the `1` value, but without adding the density suffix to the filename.
+- The `--add-meta-data` (`-m`) flag is now also available for the `icons` command. Enabling it will create an `index.css` file in the output directory, which contains registrations of custom properties with paths to icons.
+- The `--origin-density` (`-d`) option now takes the value `0`. This works like the `1` value, but without adding the density suffix to the filename.
 
 ## [2.0.0] — 2024–06–13
 
@@ -85,8 +85,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 ### Added
 
-- New CLI option `-p` (`--publicDirectory`) for the favicons command, allowing you to specify a directory (`public` by default) with static assets where the source SVG files for generating favicons are expected.
-- New CLI flag `-m` (`--addMetaData`), enabling which when processing raster images additionally generates metadata files in JSON and JS formats.
+- New CLI option `-p` (`--public-directory`) for the favicons command, allowing you to specify a directory (`public` by default) with static assets where the source SVG files for generating favicons are expected.
+- New CLI flag `-m` (`--add-meta-data`), enabling which when processing raster images additionally generates metadata files in JSON and JS formats.
 
 ## [1.0.3] — 2024–05–24
 
@@ -112,7 +112,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 ### Changed
 
 - Now the `optimize favicons` command does not generate the entire set of files for each SVG found, including those nested in subdirectories. Instead, this command only works with files in the specified directory and expects at least one of `touch.svg`, `32.svg` and `16.svg` (preferably only the first two, and the third only if there is such a version in the design). See [README.md](./README.md) for details on preparing and working with these files.
-- Now the `-r` (`--removeOrigin`) option also applies to the `optimize favicons` command.
+- Now the `-r` (`--remove-origin`) option also applies to the `optimize favicons` command.
 
 ### Added
 
