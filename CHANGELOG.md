@@ -17,6 +17,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 - The name of the JSON metadata file now has the suffix `.meta`.
 - The name of the JS metadata file now has the suffix `.imports`.
 - The JS metadata file now exports only an array with dynamic imports.
+- The progress bar is now more compact, but also more informative.
 - The minimum required `node.js` version has been increased to `22.18.0`. This has reduced the number of dependencies.
 
 ### Added
