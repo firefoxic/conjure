@@ -2,11 +2,11 @@
 
 import meow from "meow"
 
-import { conjureAll, conjureFavicons, conjureIcons, conjureImages } from "../lib/index.js"
+import { optimizeAll, optimizeFavicons, optimizeIcons, optimizeImages } from "../lib/index.js"
 
 let cli = meow(`
   Usage
-    $ conjure <command> [options]
+    $ optimize <command> [options]
 
   Commands
     images
@@ -58,11 +58,11 @@ let cli = meow(`
 
   Examples
 
-    $ conjure images --inputDirectory=source/images --removeOrigin -m
-    $ conjure images -i raws/images -o source/images -f webp -a -r
-    $ conjure icons
-    $ conjure favicons -p assets/favicons
-    $ conjure all -r -m
+    $ optimize images --inputDirectory=source/images --removeOrigin -m
+    $ optimize images -i raws/images -o source/images -f webp -a -r
+    $ optimize icons
+    $ optimize favicons -p assets/favicons
+    $ optimize all -r -m
 
 `, {
 	importMeta: import.meta,
@@ -123,16 +123,16 @@ if (!(`outputDirectory` in cli.flags)) {
 
 switch (command) {
 	case `images`:
-		await conjureImages(options)
+		await optimizeImages(options)
 		break
 	case `icons`:
-		await conjureIcons(options)
+		await optimizeIcons(options)
 		break
 	case `favicons`:
-		await conjureFavicons(options)
+		await optimizeFavicons(options)
 		break
 	case `all`:
-		await conjureAll(options)
+		await optimizeAll(options)
 		break
 	default:
 		cli.showHelp()

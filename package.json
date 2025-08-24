@@ -1,24 +1,22 @@
 {
 	"name": "@firefoxic/conjure",
-	"description": "🪄  Conjure images, icons and favicons for your frontend project.",
+	"description": "Optimize images, icons and favicons for your frontend project.",
 	"version": "3.0.1",
 	"license": "MIT",
 	"author": {
 		"name": "Sergey Artemov",
 		"email": "firefoxic.dev@gmail.com"
 	},
-	"homepage": "https://github.com/firefoxic/conjure#readme",
+	"homepage": "https://github.com/firefoxic/optimize#readme",
 	"bugs": {
-		"url": "https://github.com/firefoxic/conjure/issues"
+		"url": "https://github.com/firefoxic/optimize/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/firefoxic/conjure.git"
+		"url": "git://github.com/firefoxic/optimize.git"
 	},
 	"bin": {
-		"conjure": "bin/cli.js",
-		"whoosh": "bin/cli.js",
-		"woosh": "bin/cli.js"
+		"optimize": "bin/cli.js"
 	},
 	"type": "module",
 	"exports": "./lib/index.js",
@@ -50,11 +48,10 @@
 		"eslint": "9.33.0"
 	},
 	"keywords": [
-		"conjure",
+		"optimize",
 		"image",
 		"icon",
 		"favicon",
-		"optimize",
 		"vector",
 		"svg",
 		"convert",

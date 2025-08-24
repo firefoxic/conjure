@@ -9,6 +9,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 ### Changed
 
+- The repository and CLI command have been renamed to `optimize`.
+- The `optimize` command now works with `pnpm`.
 - Apple touch icons are no longer generated.
 - Webp touch icons are no longer generated.
 - The processing of a specific image will now be skipped if the originDensity specified does not equal the maxDensity value available for that image in the metadata file.
@@ -102,15 +104,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 ### Fixed
 
-- The `conjure favicons` command now works fine on Windows.
+- The `optimize favicons` command now works fine on Windows.
 - The `webmanifest` is now generated with a final newline.
 
 ## [1.0.0] — 2024–04–19
 
 ### Changed
 
-- Now the `conjure favicons` command does not generate the entire set of files for each SVG found, including those nested in subdirectories. Instead, this command only works with files in the specified directory and expects at least one of `touch.svg`, `32.svg` and `16.svg` (preferably only the first two, and the third only if there is such a version in the design). See [README.md](./README.md) for details on preparing and working with these files.
-- Now the `-r` (`--removeOrigin`) option also applies to the `conjure favicons` command.
+- Now the `optimize favicons` command does not generate the entire set of files for each SVG found, including those nested in subdirectories. Instead, this command only works with files in the specified directory and expects at least one of `touch.svg`, `32.svg` and `16.svg` (preferably only the first two, and the third only if there is such a version in the design). See [README.md](./README.md) for details on preparing and working with these files.
+- Now the `-r` (`--removeOrigin`) option also applies to the `optimize favicons` command.
 
 ### Added
 
@@ -134,18 +136,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 - Basic functionality.
 
-[Unreleased]: https://github.com/firefoxic/conjure/compare/v3.0.1...HEAD
-[3.0.1]: https://github.com/firefoxic/conjure/compare/v3.0.0...v3.0.1
-[3.0.0]: https://github.com/firefoxic/conjure/compare/v2.1.3...v3.0.0
-[2.1.3]: https://github.com/firefoxic/conjure/compare/v2.1.2...v2.1.3
-[2.1.2]: https://github.com/firefoxic/conjure/compare/v2.1.1...v2.1.2
-[2.1.1]: https://github.com/firefoxic/conjure/compare/v2.1.0...v2.1.1
-[2.1.0]: https://github.com/firefoxic/conjure/compare/v2.0.0...v2.1.0
-[2.0.0]: https://github.com/firefoxic/conjure/compare/v1.0.3...v2.0.0
-[1.0.3]: https://github.com/firefoxic/conjure/compare/v1.0.2...v1.0.3
-[1.0.2]: https://github.com/firefoxic/conjure/compare/v1.0.1...v1.0.2
-[1.0.1]: https://github.com/firefoxic/conjure/compare/v1.0.0...v1.0.1
-[1.0.0]: https://github.com/firefoxic/conjure/compare/v0.1.2...v1.0.0
-[0.1.2]: https://github.com/firefoxic/conjure/compare/v0.1.1...v0.1.2
-[0.1.1]: https://github.com/firefoxic/conjure/compare/v0.1.0...v0.1.1
-[0.1.0]: https://github.com/firefoxic/conjure/releases/tag/v0.1.0
+[Unreleased]: https://github.com/firefoxic/optimize/compare/v3.0.1...HEAD
+[3.0.1]: https://github.com/firefoxic/optimize/compare/v3.0.0...v3.0.1
+[3.0.0]: https://github.com/firefoxic/optimize/compare/v2.1.3...v3.0.0
+[2.1.3]: https://github.com/firefoxic/optimize/compare/v2.1.2...v2.1.3
+[2.1.2]: https://github.com/firefoxic/optimize/compare/v2.1.1...v2.1.2
+[2.1.1]: https://github.com/firefoxic/optimize/compare/v2.1.0...v2.1.1
+[2.1.0]: https://github.com/firefoxic/optimize/compare/v2.0.0...v2.1.0
+[2.0.0]: https://github.com/firefoxic/optimize/compare/v1.0.3...v2.0.0
+[1.0.3]: https://github.com/firefoxic/optimize/compare/v1.0.2...v1.0.3
+[1.0.2]: https://github.com/firefoxic/optimize/compare/v1.0.1...v1.0.2
+[1.0.1]: https://github.com/firefoxic/optimize/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/firefoxic/optimize/compare/v0.1.2...v1.0.0
+[0.1.2]: https://github.com/firefoxic/optimize/compare/v0.1.1...v0.1.2
+[0.1.1]: https://github.com/firefoxic/optimize/compare/v0.1.0...v0.1.1
+[0.1.0]: https://github.com/firefoxic/optimize/releases/tag/v0.1.0
