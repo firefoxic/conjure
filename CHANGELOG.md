@@ -14,6 +14,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 - The processing of a specific image will now be skipped if the originDensity specified does not equal the maxDensity value available for that image in the metadata file.
 - The processing of a specific image will now be skipped if the target formats specified do not match those available in the metadata file for that image.
 - The breakpoint suffix in raster image file names must now begin with `~` instead of `-`. For example, `cat-768.png` must be renamed to `cat~768.png`.
+- The JS metadata file now exports only an array with dynamic imports.
 - The minimum required `node.js` version has been increased to `22.18.0`. This has reduced the number of dependencies.
 
 ### Added

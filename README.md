@@ -107,7 +107,7 @@ Conjure is invoked via the command line:
 
 > #### Note: Don’t forget to specify the `-m` flag
 >
-> When processing raster images, the `-m` (`--add-meta-data`) flag enables generation of metadata files in JSON and JS formats. Metadata files are convenient for generating the `picture` tag. For macro of templating engines (like Nunjucks) a JSON file is more suitable. And for a component of frameworks (especially Vite-based frameworks such as Astro) JS file is more convenient, because its dynamic imports when building a project will trigger hashing of image files and return paths to new files.
+> When processing raster images, the `-m` flag (`--add-meta-data`) enables the generation of metadata files. Metadata files are useful for generating the `picture` tag. JS files are needed in Vite-based frameworks (such as Astro) because their dynamic imports during project build return paths to hashed files. And using custom properties from the CSS icon file allows you to automatically encode icons into styles.
 
 ### Examples
 
