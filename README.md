@@ -102,19 +102,19 @@ Optimize is invoked via the command line:
 
 #### `-m`, `--add-meta-data`
 
-- _Default:_ `false`
+- _Default:_ `true`
 - _Description:_ Create JSON and JS files with metadata of the raster images and CSS file for the icons
 
-> #### Note: Don’t forget to specify the `-m` flag
+> #### Tip: Canceling the addition of metadata files
 >
-> When processing raster images, the `-m` flag (`--add-meta-data`) enables the generation of metadata files. Metadata files are useful for generating the `picture` tag. JS files are needed in Vite-based frameworks (such as Astro) because their dynamic imports during project build return paths to hashed files. And using custom properties from the CSS icon file allows you to automatically encode icons into styles.
+> Metadata files are useful for generating the `picture` tag. JS files are needed in Vite-based frameworks (such as Astro) because their dynamic imports during project build return paths to hashed files. And using custom properties from the CSS icon file allows you to automatically encode icons into styles. To cancel the addition of metadata files, use the `--no-` prefix for the flag: `--no-m` or `--no-add-meta-data`.
 
 ### Examples
 
-- In the `source/images` folder, optimize all SVGs and convert the raster images to `avif` and `webp` formats at the original size for `2x` pixel density and at a reduced size for `1x` pixel density; and after processing the raster images, delete their original files and generate JSON and JS files with metadata:
+- In the `source/images` folder, optimize all SVGs and convert the raster images to `avif` and `webp` formats at the original size for `2x` pixel density and at a reduced size for `1x` pixel density; and after processing the raster images, delete their original files and not generate JSON and JS files with metadata:
 
 	```shell
-	optimize images --input-directory=source/images --remove-origin --add-meta-data
+	optimize images --input-directory=source/images --remove-origin --no-add-meta-data
 	```
 
 	> #### Tip for exporting raster layers from layouts
@@ -124,13 +124,13 @@ Optimize is invoked via the command line:
 - Take all vector and raster images from the `raws/images` folder; optimize vector images and put them in `source/images`; convert raster images to `webp` format and to the original format, optimizing them for `2x` and `1x` pixel densities, placing these results also in `source/images`; when processing is completed, delete the original raster images from `raws/images`:
 
 	```shell
-	optimize images -i raws/images -o source/images -f webp -a -r
+	optimize images -i raws/images -o source/images -f webp -a -r --no-m
 	```
 
 - Optimize SVG icons in the default `src/shared/icons` folder and create the CSS file that contain custom properties with paths to the icons:
 
 	```shell
-	optimize icons -m
+	optimize icons
 	```
 
 - In the `assets` folder, convert files `touch.svg`, `32.svg` (and optionaly `16.svg`) to:
@@ -160,7 +160,7 @@ Optimize is invoked via the command line:
 	- run `optimize favicons` in the `public` folder,
 
 	```shell
-	optimize all -r -m
+	optimize all -r
 	```
 
 [license-url]: https://github.com/firefoxic/optimizee/blob/main/LICENSE.md

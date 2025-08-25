@@ -50,7 +50,7 @@ let cli = meow(`
 
     --add-meta-data     -m  Create JSON and JS files with metadata of the raster images
 	                        and CSS file for the icons.
-                            (Default: false)
+                            (Default: true)
 
     --version               Print version and exit
 
@@ -58,11 +58,11 @@ let cli = meow(`
 
   Examples
 
-    $ optimize images --inputDirectory=source/images --removeOrigin -m
+    $ optimize images --inputDirectory=source/images --removeOrigin
     $ optimize images -i raws/images -o source/images -f webp -a -r
-    $ optimize icons
+    $ optimize icons --no-m
     $ optimize favicons -p assets/favicons
-    $ optimize all -r -m
+    $ optimize all -r
 
 `, {
 	importMeta: import.meta,
@@ -104,7 +104,7 @@ let cli = meow(`
 		addMetaData: {
 			"type": `boolean`,
 			"shortFlag": `m`,
-			"default": false,
+			"default": true,
 		},
 	},
 })

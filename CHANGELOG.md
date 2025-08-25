@@ -16,6 +16,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 - The processing of a specific image will now be skipped if the originDensity specified does not equal the maxDensity value available for that image in the metadata file.
 - The processing of a specific image will now be skipped if the target formats specified do not match those available in the metadata file for that image.
 - The breakpoint suffix in raster image file names must now begin with `~` instead of `-`. For example, `cat-768.png` must be renamed to `cat~768.png`.
+- The `-m` (`--add-meta-data`) flag is now enabled by default. Use `--no-m` (`--no-add-meta-data`) to disable it.
 - The name of the JSON metadata file now has the suffix `.meta`.
 - The name of the JS metadata file now has the suffix `.imports`.
 - The JS metadata file now exports only an array with dynamic imports.
