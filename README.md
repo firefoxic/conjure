@@ -23,13 +23,13 @@ Optimize is a command line utility for optimizing vector images, converting ra
 To install Optimize, you need to have Node.js installed on your machine. Then you can install in your project using _pnpm_ (for _npm_, just remove the first `p`):
 
 ```shell
-pnpm add @firefoxic/conjure -D
+pnpm add @firefoxic/optimize -D
 ```
 
 or globally
 
 ```shell
-pnpm add @firefoxic/conjure -g
+pnpm add @firefoxic/optimize -g
 ```
 
 ## Usage
@@ -51,7 +51,7 @@ Optimize is invoked via the command line:
 - without installation:
 
 	```shell
-	pnpm dlx @firefoxic/conjure <command> [options]
+	pnpm dlx @firefoxic/optimize <command> [options]
 	```
 
 ### Commands
@@ -169,8 +169,8 @@ Optimize is invoked via the command line:
 [changelog-url]: https://github.com/firefoxic/optimizee/blob/main/CHANGELOG.md
 [changelog-image]: https://img.shields.io/badge/Changelog-md-limegreen
 
-[npm-url]: https://npmjs.org/package/@firefoxic/conjure
-[npm-image]: https://img.shields.io/npm/v/%40firefoxic%2Fconjure?logo=npm&color=limegreen
+[npm-url]: https://npmjs.org/package/@firefoxic/optimize
+[npm-image]: https://img.shields.io/npm/v/%40firefoxic%2Foptimize?logo=npm&color=limegreen
 
 [test-url]: https://github.com/firefoxic/optimize/actions
 [test-image]: https://github.com/firefoxic/optimize/actions/workflows/test.yaml/badge.svg?branch=main
