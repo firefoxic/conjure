@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 ## [Unreleased]
 
+## [4.0.0] — 2025–08–25
+
 ### Changed
 
 - The repository and CLI command have been renamed to `optimize`.
@@ -137,7 +139,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and 
 
 - Basic functionality.
 
-[Unreleased]: https://github.com/firefoxic/optimize/compare/v3.0.1...HEAD
+[Unreleased]: https://github.com/firefoxic/optimize/compare/v4.0.0...HEAD
+[4.0.0]: https://github.com/firefoxic/optimize/compare/v3.0.1...v4.0.0
 [3.0.1]: https://github.com/firefoxic/optimize/compare/v3.0.0...v3.0.1
 [3.0.0]: https://github.com/firefoxic/optimize/compare/v2.1.3...v3.0.0
 [2.1.3]: https://github.com/firefoxic/optimize/compare/v2.1.2...v2.1.3

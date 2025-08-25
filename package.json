@@ -1,7 +1,7 @@
 {
 	"name": "@firefoxic/optimize",
 	"description": "Optimize images, icons and favicons for your frontend project.",
-	"version": "3.0.1",
+	"version": "4.0.0",
 	"license": "MIT",
 	"author": {
 		"name": "Sergey Artemov",
